@@ -5,27 +5,27 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#1E3A8A", // Dark Blue for primary buttons, headers
-          hover: "#2563EB", // Lighter Blue for hover
+          DEFAULT: "#2C4A52", // Deep Teal for primary buttons, headers (modern and professional)
+          hover: "#4A6A73", // Lighter Teal for hover
         },
         secondary: {
-          DEFAULT: "#10B981", // Green for success messages, secondary buttons
-          hover: "#34D399", // Lighter Green for hover
+          DEFAULT: "#F4A261", // Warm Orange for success messages, secondary buttons (adds a pop of color)
+          hover: "#F6B17A", // Lighter Orange for hover
         },
         danger: {
-          DEFAULT: "#EF4444", // Red for delete buttons, errors
-          hover: "#F87171", // Lighter Red for hover
+          DEFAULT: "#D9534F", // Soft Red for delete buttons, errors (less harsh than the previous red)
+          hover: "#E57373", // Lighter Red for hover
         },
         background: {
-          DEFAULT: "#F3F4F6", // Light Gray for background
-          dark: "#E5E7EB", // Slightly darker for cards
+          DEFAULT: "#F5F7FA", // Very Light Blue-Gray for background (clean and minimal)
+          dark: "#E8ECEF", // Slightly darker Blue-Gray for cards
         },
         text: {
-          DEFAULT: "#1F2937", // Dark Gray for text
-          light: "#6B7280", // Lighter Gray for secondary text
+          DEFAULT: "#2D3748", // Dark Slate for text (good contrast for readability)
+          light: "#718096", // Muted Slate for secondary text
         },
         border: {
-          DEFAULT: "#D1D5DB", // Gray for borders
+          DEFAULT: "#CBD5E0", // Soft Gray for borders (subtle and clean)
         },
       },
     },

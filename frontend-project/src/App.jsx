@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import Sidebar from './components/Sidebar'; // Updated to Sidebar
 import ParkingSlotPage from './pages/ParkingSlotPage';
 import CarPage from './pages/CarPage';
 import ParkingRecordPage from './pages/ParkingRecordPage';
@@ -16,11 +16,25 @@ const ProtectedRoute = ({ children }) => {
   return user ? children : <Navigate to="/login" />;
 };
 
+// Wrapper to conditionally show Sidebar
+const Layout = ({ children }) => {
+  const location = useLocation();
+  const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
+
+  return (
+    <div className="min-h-screen flex w-full bg-background">
+      {!isAuthPage && <Sidebar />}
+      <main className={`flex-1 ${!isAuthPage ? 'ml-[240px] md:ml-[240px]' : ''}`}>
+        {children}
+      </main>
+    </div>
+  );
+};
+
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen">
-        <Navbar />
+      <Layout>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -66,7 +80,7 @@ const App = () => {
           />
           <Route path="/" element={<Navigate to="/parking-slots" />} />
         </Routes>
-      </div>
+      </Layout>
     </Router>
   );
 };

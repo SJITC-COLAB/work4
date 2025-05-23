@@ -5,27 +5,27 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#4F46E5", // Indigo for primary buttons, headers
-          hover: "#6366F1",   // Slightly lighter Indigo for hover
+          DEFAULT: "#1E3A8A", // Dark Blue for primary buttons, headers
+          hover: "#2563EB", // Lighter Blue for hover
         },
         secondary: {
-          DEFAULT: "#14B8A6", // Teal for success messages, secondary buttons
-          hover: "#2DD4BF",   // Lighter Teal for hover
+          DEFAULT: "#10B981", // Green for success messages, secondary buttons
+          hover: "#34D399", // Lighter Green for hover
         },
         danger: {
-          DEFAULT: "#E11D48", // Rose Red for delete buttons, errors
-          hover: "#FB7185",   // Lighter Rose for hover
+          DEFAULT: "#EF4444", // Red for delete buttons, errors
+          hover: "#F87171", // Lighter Red for hover
         },
         background: {
-          DEFAULT: "#F9FAFB", // Very Light Gray for background
-          dark: "#E0E7FF",    // Soft Indigo-tinted Gray for cards
+          DEFAULT: "#F3F4F6", // Light Gray for background
+          dark: "#E5E7EB", // Slightly darker for cards
         },
         text: {
-          DEFAULT: "#0F172A", // Very Dark Gray-Blue for text
-          light: "#64748B",   // Muted Slate for secondary text
+          DEFAULT: "#1F2937", // Dark Gray for text
+          light: "#6B7280", // Lighter Gray for secondary text
         },
         border: {
-          DEFAULT: "#CBD5E1", // Slate Gray for borders
+          DEFAULT: "#D1D5DB", // Gray for borders
         },
       },
     },
